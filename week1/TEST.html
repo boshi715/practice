@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0,maximum-scale=1.0">
+    <link rel=stylesheet type="text/css" href="./test.css">
+
+</head>
+
+<body>
+    <div>
+        <ul class="nav">
+            <li><a>首頁</a></li>
+            <li><a>JOKER</a></li>
+            <li><a>BANANA</a></li>
+            <li><a>CAT</a></li>
+            <li><a class="right">DOG</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li><b>A</b></li>
+            <li><b class="right">D</b></li>
+        </ul>
+    </div>
+    <div>
+        <label for="burger">☰</label>
+        <ul class="bur" id="menu">
+            <li>
+                <c>首頁</c>
+            </li>
+            <li>
+                <c>JOKER</c>
+            </li>
+            <li>
+                <c>BANANA</c>
+            </li>
+            <li>
+                <c>CAT</c>
+            </li>
+            <li>
+                <c>DOG</c>
+            </li>
+        </ul>
+        <input id="burger" type="checkbox" onclick="show(this,'menu')" />
+        <script>
+            function show(obj, item) {
+                document.getElementById(item).style.display = obj.checked ? "block" : "none";
+            }
+        </script>
+    </div>
+    <select> 
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+        <option>D</option>
+    </select>
+    <div class="wrap">
+        <img src="https://www.ibest.tw/images/case/case_web_apm.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_tricomtek.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_shanyifangresort.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_oakdesign.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_apm.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_tricomtek.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_shanyifangresort.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_oakdesign.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_apm.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_tricomtek.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_shanyifangresort.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_oakdesign.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_apm.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_tricomtek.jpg" alt="Lamp" />
+        <img src="https://www.ibest.tw/images/case/case_web_shanyifangresort.jpg" alt="Lamp" />
+    </div>
+</body>
+
+</html>

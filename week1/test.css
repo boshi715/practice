@@ -1,0 +1,173 @@
+img {
+    height: auto;
+    width: 21%;
+    margin: 2%;
+    padding: 0%;
+    float: left;
+    margin-top: 5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: block;
+    background-color: powderblue;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #333;
+    overflow: hidden;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+li a {
+    display: block;
+    float: left;
+    border-right: 2px solid white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li b {
+    display: none;
+    float: left;
+    border-right: 2px solid white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li c {
+    display: block;
+    float: none;
+    border-bottom: 2px solid white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+select {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-align-last: center;
+    font-size: 30px;
+}
+
+label {
+    display: none;
+    font-size: 40px;
+    margin-left: 2%;
+    position: fixed;
+}
+
+input {
+    display: none;
+}
+
+ul li a:hover,
+b:hover,
+c:hover {
+    background-color: tomato;
+    color: white;
+}
+
+.bur {
+    position: fixed;
+    width: 25%;
+    display: none;
+}
+
+.nav {
+    z-index: 90;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    overflow-y: scroll;
+    z-index: -1;
+}
+
+.right {
+    float: right;
+    border-right: 0px;
+    border-left: 2px solid white;
+}
+
+@media screen and (max-width: 1800px) {
+    ul li a {
+        border-right: 2px solid orange;
+    }
+    ul li a.right {
+        border-left: 2px solid orange;
+    }
+    img {
+        height: auto;
+        width: 29%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    ul li a.right,
+    ul li a {
+        float: none;
+        border: 0px;
+        border-bottom: 3px solid green;
+    }
+    .wrap {
+        top: 20%;
+    }
+    img {
+        height: auto;
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    ul li a,
+    ul li a.right {
+        border-bottom: 3px solid brown;
+    }
+    img {
+        height: auto;
+        width: 96%;
+    }
+    .wrap {
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    ul li a,
+    ul li a.right {
+        display: none;
+    }
+    img {
+        height: auto;
+        width: 100%;
+    }
+    .wrap {
+        top: 5%;
+    }
+    label {
+        display: block;
+    }
+    ul.bur {
+        margin-top: 60px;
+    }
+}
